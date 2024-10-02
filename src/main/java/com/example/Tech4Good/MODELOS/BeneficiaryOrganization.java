@@ -2,14 +2,14 @@ package com.example.Tech4Good.MODELOS;
 
 import jakarta.persistence.*;
 
-@Entity
-@Table(name="BeneficiaryOrganization")
+@Entity  // crear tablas BD
+@Table(name="BeneficiaryOrganization")  // nombre tabla
 public class BeneficiaryOrganization {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id // poner un id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // id autoincremental
     private Long idOrganization;
 
-    @Column(name = "nameOrganization", nullable = false)
+    @Column(name = "nameOrganization", nullable = false) // poner nombre a cada columna para la BD
     private String nameOrganization;
 
     @Column(name = "identificationNumber", nullable = false)
